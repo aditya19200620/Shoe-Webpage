@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(29, 30, 29);
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: black;
+    background-color: rgb(31, 30, 30);
+}
+
+.container {
+    background-color:transparent;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255,.2);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    backdrop-filter: blur(25px);
+    width: 100%;
+    max-width: 400px;
+}
+
+ 
+
+
+h1 {
+    color:rgb(10, 10, 10);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    transition: all ease-in-out 0.2s;
+}
+h1:hover
+{
+    color: hsl(160, 54%, 55%);
+}
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+input, select, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: border-color 0.3s ease;
+}
+
+input:hover, select:hover, textarea:hover {
+    border-color: rgb(53, 179, 137);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: rgb(53, 179, 137);
+    box-shadow: 0 0 0 2px rgba(53, 179, 137, 0.2);
+}
+
+button {
+    background-color: rgb(53, 179, 137);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: rgb(45, 150, 115);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.success-message {
+    background-color: rgb(53, 179, 137);
+    color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+.remember-forget a{
+    text-decoration: none;
+    color: rgb(133, 130, 130);
+}
+.register-lnik a{
+    text-decoration: none;
+    color: rgb(133, 130, 130);
+}
+.wrapper{
+    border: 2px solid rgb(116, 132, 127);
+    padding: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+}
